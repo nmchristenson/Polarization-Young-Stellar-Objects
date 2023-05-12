@@ -13,6 +13,6 @@ Major goals:
   - Use Python ccdproc package to automate calibration process (bias subtracting, dark subtracting, flat fielding)
 
 
-Included in this repository are the visualization and automatic calibration Python scripts, as well as sample visualization output for one of the objects images (Egg Nebula), and a comparison of the calibration histograms from AstroImageJ and ccdproc for an example set (one angle).
+Included in this repository are the visualization and automatic calibration Python scripts and all of our defined convenience functions. 
 
 Acknowledgements: We would like to thank NASA/Rhode Island Space Grant and Wheaton College for funding this research.
