@@ -15,12 +15,12 @@ Usage:
 Output:
     Four fits subimages with _pXXX suffixes where XXX are 
     000, 045, 090, 135
+
+Updates:
+ Nina 8/4/2022: loops through file names to split all files in a given folder 
+ DM 2023-May-16: more pythonic looping through file names 
 """
 
-# updated by Nina 8/4/2022
-'''
-loops through file names to split all files in a given folder 
-'''
 
 
 import os
@@ -31,8 +31,8 @@ dirName = "Example/Directory"
 
 fileList = os.listdir(dirName)  #does not check if its a fits file
 
-for i in range(len(fileList)):
-    ip = dirName + fileList[i]
+for i in fileList:
+    ip = dirName + i
     print(ip)
     ret = pf.read_fits_save_scaled_split_fits (ip)
     
